@@ -5,6 +5,7 @@
 }
 body{
     margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 .wrap {
     width: 1140px;
@@ -33,7 +34,6 @@ body{
 
 .menu {
 
-
 }
 
 .user {
@@ -48,14 +48,37 @@ body{
     background-color: #F1E4E6;
     padding: 0 calc(50% - 1140px / 2);
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
 }
-h1 {
-    font-size: 48px;
+
+.promo .title, .promo .img {
+    width: 50%;
 }
+
+.promo .title {
+    display: flex;
+    justify-content:center;
+    width: 50%;
+}
+
+.promo h1 {
+    font-size: 48px;
+    line-height: .8;
+    margin-left: 16px;
+    padding: 8px 0;
+}
+
+.title .border {
+    border-left: #F16D7F 12px solid;
+}
+
 .h2 {
     font-size:32px
+}
+
+.color {
+   color: #F16D7F;
 }
 
 
@@ -75,6 +98,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .ofter .col-1 {
     background: no-repeat center/80% url("../img/3.png");
@@ -96,6 +120,15 @@ h1 {
     background-size: cover;
     margin-top: 30px;
 
+}
+
+.ofter .line-1 {
+    font-size:16px;
+    text-align: center;
+}
+.ofter .line-2 {
+    font-size: 24px;
+    color: #F16D7F;
 }
 
 .product {
