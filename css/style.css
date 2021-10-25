@@ -6,10 +6,16 @@
 
 @font-face {
   font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("../fonts/Lato.ttf")
+  src: url(../fonts/Lato-Bold.ttf) format("truetype"); /* все современные браузеры */
+  src: url(../fonts/Lato-Regular.ttf) format("truetype"); /* все современные браузеры */
+}
+
+.hidden {
+  position: absolute;
+  left: -999999px;
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
 
 body {
@@ -61,14 +67,19 @@ body {
   align-items: center;
 }
 
-.promo__col-1,
-.promo__col-2 {
+.promo__col_1,
+.promo__col_2 {
   width: 50%;
+}
+
+.promo__col_1 {
+  display: flex;
+  justify-content: start;
 }
 
 .promo__title {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -198,6 +209,10 @@ button {
   text-align: center;
 }
 
+.feature__col {
+    width:360px
+}
+
 .feature__ico {
   margin-bottom: 20px;
 }
@@ -206,6 +221,9 @@ button {
 }
 .feature__desc {
   padding: 0 15px;
+  font-size: 14px;
+  color: #FBFBFB;
+  font-weight: 300;
 }
 
 .subscribe {
@@ -218,9 +236,13 @@ button {
   background-size: cover;
 }
 
-.subscribe__col-1 {
+.subscribe__col_1 {
   max-width: 360px;
   text-align: center;
+}
+
+.subscribe__style {
+  font-style: italic;
 }
 
 .subscribe__img {
