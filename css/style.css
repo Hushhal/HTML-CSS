@@ -120,7 +120,7 @@ h1 {
   justify-content: space-between;
   flex-wrap: wrap;
   color: #fff;
-  margin-top: 30px;
+  margin-top: 65px;
 }
 
 .ofter__col {
@@ -247,28 +247,47 @@ button {
   background-color: #fff;
   padding: 90px calc(50% - 1140px / 2);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-content: center;
   flex-wrap: wrap;
   background: no-repeat center/80% url("../img/photo subscribe.jpg");
   background-size: cover;
 }
 
-.subscribe__col_1 {
+.feedback__col_1 {
   max-width: 360px;
   text-align: center;
 }
 
-.subscribe__size {
+.feedback__img {
+  margin-bottom: 30px;
+}
+
+.feedback__size {
   font-size: 20px;
   line-height: 24px;
 }
 
-.subscribe__style {
+.feedback__style {
   font-style: italic;
 }
 
-.subscribe__img {
-  margin-bottom: 30px;
+.subscribe__col_2 {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.subscribe__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.subscribe__desc {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .footer {
