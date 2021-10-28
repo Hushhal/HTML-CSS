@@ -39,7 +39,7 @@ body {
   width: 1140px;
   margin: 0 auto;
 }
-.header {
+.navbar {
   padding: 0 calc(50% - 1140px / 2);
   display: flex;
   justify-content: space-between;
@@ -52,22 +52,22 @@ body {
   color: #fff;
 }
 
-.header__logo {
+.navbar__logo {
   width: 44px;
   height: 38px;
 }
 
-.header__search {
+.navbar__search {
   width: 26px;
   height: 26.79px;
   margin-left: 41px;
 }
 
-.header__user-ico {
+.navbar__user-ico {
   margin-left: 33px;
 }
 
-.header__basket-ico {
+.navbar__basket-ico {
   margin-left: 33px;
 }
 
@@ -103,6 +103,7 @@ h1 {
   border-left: #f16d7f 12px solid;
   font-family: "Lato", sans-serif;
   font-weight: 700;
+  color:#222222;
 }
 
 .promo__h2 {

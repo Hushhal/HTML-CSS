@@ -9,19 +9,19 @@
   </head>
   <body>
     <header class="header header_black">
-      <div class="header__column">
-        <a href="index.html"
-          ><img src="img/logo.png" class="header__logo" alt="logo"
-        /></a>
-        <img src="img/search.png" class="header__search" alt="search" />
-      </div>
-      <div class="header__column">
-        <img src="img/menu.png" class="header__menu" alt="menu" />
-        <img src="img/user.png" class="header__user-ico" alt="user" />
-        <img src="img/basket.png" class="header__basket-ico" alt="basket" />
-      </div>
-    </header>
-    <main>
+      <nav class="navbar">
+        <div class="navbar__column">
+          <a href="index.html" class="navbar__link"
+            ><img src="img/logo.png" class="navbar__logo" alt="logo"
+          /></a>
+          <img src="img/search.png" class="navbar__search" alt="search" />
+        </div>
+        <div class="navbar__column">
+          <img src="img/menu.png" class="navbar__menu" alt="menu" />
+          <img src="img/user.png" class="navbar__user-ico" alt="user" />
+          <img src="img/basket.png" class="navbar__basket-ico" alt="basket" />
+        </div>
+      </nav>
       <div class="promo">
         <div class="promo__col_1">
           <div class="promo__img">
@@ -39,6 +39,8 @@
           </div>
         </div>
       </div>
+    </header>
+    <main>
       <h2 class="hidden">Product categories</h2>
       <div class="ofter">
         <h3 class="hidden">FOR WOMEN</h3>
@@ -179,14 +181,17 @@
 
     <h2 class="hidden">Feedback and subscribe</h2>
     <section class="subscribe">
+      <h3 class="hidden">Feedback</h3>
       <div class="feedback__col_1">
         <img src="img/face.png" alt="" class="feedback__img" />
         <div class="feedback__size">
           “Vestibulum quis porttitor dui!
           <span class="feedback__style"
-            >viverra nunc mi, a pulvinar purus condimentum“</span>
+            >viverra nunc mi, a pulvinar purus condimentum“</span
+          >
         </div>
       </div>
+      <h3 class="hidden">Subscribe</h3>
       <div class="subscribe__col_2">
         <div class="subscribe__title">
           SUBSCRIBE<br />
