@@ -309,6 +309,9 @@ button {
   border: none;
   padding: 0 20px;
 }
+.subscribe__form_input::placeholder {
+  color: #222224;
+}
 
 .subscribe__form_submit {
   line-height: 50px;
@@ -318,6 +321,11 @@ button {
   color: #fff;
   border: none;
   padding: 0 20px;
+  cursor: pointer;
+}
+
+.subscribe__form_submit:hover {
+  background-color: #d95768;
 }
 
 .footer {
