@@ -275,7 +275,8 @@ button {
 
 .subscribe__col_2 {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-content: center;
   flex-wrap: wrap;
 }
@@ -284,11 +285,39 @@ button {
   font-size: 24px;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 32px;
 }
 
 .subscribe__desc {
   font-size: 18px;
   font-weight: 400;
+}
+.subscribe__form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.subscribe__form_input {
+  line-height:50px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #E1E1E1;
+  border: none;
+  padding: 0 20px;
+}
+
+.subscribe__form_submit {
+  line-height:50px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #F16D7F;
+  color: #fff;
+  border: none;
+  padding: 0 20px;
 }
 
 .footer {
