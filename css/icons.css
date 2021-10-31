@@ -1,0 +1,6 @@
+.navbar__link {
+    fill: #fff;
+}
+.navbar__link:hover {
+    fill: #f16d7f;
+}
