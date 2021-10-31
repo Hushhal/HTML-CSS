@@ -291,6 +291,7 @@ button {
   color: #c4c4c4;
   font-size: 16px;
   font-weight: 300;
+  list-style-type: none;
 }
 
 .pagination__number_active {
@@ -386,7 +387,7 @@ button {
   font-size: 14px;
 }
 
-.subscribe__form_input {
+.form__input {
   line-height: 50px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
@@ -394,11 +395,11 @@ button {
   border: none;
   padding: 0 20px;
 }
-.subscribe__form_input::placeholder {
+.form__input::placeholder {
   color: #222224;
 }
 
-.subscribe__form_submit {
+.form__submit {
   line-height: 50px;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;

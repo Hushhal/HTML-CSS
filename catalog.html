@@ -29,20 +29,21 @@
         </div>
         <div class="breadcrumbs__nav">
           <div class="breadcrumbs__nav_li">HOME / MEN / <span class="breadcrumbs__nav_active">NEW ARRIVALS</span></div>
-        </divn>
+        </div>
       </section>
     </header>
     <main>
-      <h2 class="hidden">Catalog</h2>
-      <div class="wrap product__filter">
+
+      <section class="wrap product__filter">
+        <h2 class="hidden">Catalog</h2>
       <div class="product__filter_sort">FILTER<img src="img/sort.png" alt="" class="product__filter_sort_img"></div>
       <div class="product__select">
           <div class="product__select_name">TRENDING NOW<img src="img/arrow-bottom.png" alt="" class="product__select_img"></div>
           <div class="product__select_name">SIZE<img src="img/arrow-bottom.png" alt="" class="product__select_img"></div>
           <div class="product__select_name">PRICE<img src="img/arrow-bottom.png" alt="" class="product__select_img"></div>
     </div>
-      </div>
-      <div class="product">
+  </section>
+      <section class="product">
 
         <div class="product__col">
           <img src="img/catalog/product-id-1.jpg" alt="" />
@@ -144,21 +145,22 @@
             </div>
           </div>
         <div class="pagination wrap">
-            <div class="pagination__container">
-          <div class="pagination__arrow"><img src="img/arrow-left.png" alt="" class=""></div>
-          <div class="pagination__number_active">1</div>
-          <div class="pagination__number">2</div>
-          <div class="pagination__number">3</div>
-          <div class="pagination__number">4</div>
-          <div class="pagination__number">5</div>
-          <div class="pagination__number">6....20</div>
-          <div class="pagination__arrow"><img src="img/arrow-right.png" alt="" class=""></div>
-        </div>
-        </div>
-      </div>
+            <ul class="pagination__container">
+          <li class="pagination__arrow"><img src="img/arrow-left.png" alt="" class=""></li>
+          <li class="pagination__number_active">1</li>
+          <li class="pagination__number">2</li>
+          <li class="pagination__number">3</li>
+          <li class="pagination__number">4</li>
+          <li class="pagination__number">5</li>
+          <li class="pagination__number">6....20</li>
+          <li class="pagination__arrow"><img src="img/arrow-right.png" alt="" class=""></li>
+            </ul>
+          </div>
+      </section>
     </main>
-    <h2 class="hidden">Feature</h2>
+
     <section class="feature">
+      <h2 class="hidden">Feature</h2>
       <div class="feature__col">
         <img src="img/delivery.png" alt="" class="feature__ico" />
         <h3 class="feature__title">Free Delivery</h3>
@@ -204,15 +206,15 @@
           <span class="subscribe__desc">FOR OUR NEWLETTER AND PROMOTION</span>
         </div>
         <div class="subscribe__form">
-          <form action="#">
+          <form class="form" action="#">
             <input
               type="email"
               placeholder="Enter Your Email"
-              class="subscribe__form_input"
+              class="form__input"
             />
             <input
               type="submit"
-              class="subscribe__form_submit"
+              class="form__submit"
               value="Subscribe"
             />
           </form>
