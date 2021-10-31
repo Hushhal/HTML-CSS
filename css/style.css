@@ -131,6 +131,7 @@ body {
 .breadcrumbs__nav {
   color: #636363;
   font-size: 14px;
+  font-weight: 300;
 }
 
 .breadcrumbs__nav_active {
@@ -440,7 +441,7 @@ body {
 }
 
 .link {
-  color:#000;
+  color: #000;
   background-color: #fff;
   padding: 5px;
   width: 31.45px;
@@ -454,6 +455,6 @@ body {
 
 .link:hover,
 .link:focus {
-  color:#fff;
-  background-color: #F16D7F;
+  color: #fff;
+  background-color: #f16d7f;
 }

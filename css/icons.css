@@ -1,6 +1,11 @@
 .navbar__link {
     fill: #fff;
 }
-.navbar__link:hover {
+.navbar__link:hover,
+.pagination__arrow_right:hover,
+.pagination__arrow_left:hover,
+.product__select_img:hover,
+.product__filter_sort_img:hover
+ {
     fill: #f16d7f;
 }
