@@ -1,0 +1,27 @@
+.form__input {
+  line-height: 50px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #e1e1e1;
+  border: none;
+  padding: 0 20px;
+}
+.form__input::placeholder {
+  color: #222224;
+}
+
+.form__submit {
+  line-height: 50px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #f16d7f;
+  color: #fff;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.form__submit:hover,
+.form__submit:focus {
+  background-color: #c63e51;
+}

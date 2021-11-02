@@ -1,0 +1,26 @@
+.navbar {
+  padding: 0 calc(50% - 1140px / 2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+
+.navbar__logo {
+  width: 44px;
+  height: 38px;
+}
+
+.navbar__search {
+  width: 26px;
+  height: 26.79px;
+  margin-left: 41px;
+}
+
+.navbar__user-ico {
+  margin-left: 33px;
+}
+
+.navbar__basket-ico {
+  margin-left: 33px;
+}

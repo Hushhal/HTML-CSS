@@ -1,0 +1,31 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 18px 0 96px!important;
+}
+
+.pagination__container {
+  border: 1px solid #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.pagination__number,
+.pagination__arrow,
+.pagination__number_active {
+  padding: 12px;
+  color: #c4c4c4;
+  font-size: 16px;
+  font-weight: 300;
+  list-style-type: none;
+}
+
+.pagination__number_active {
+  color: #f16d7f;
+}
+
+.pagination__arrow {
+  color: #c4c4c4;
+}

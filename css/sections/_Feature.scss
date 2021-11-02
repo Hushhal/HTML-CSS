@@ -1,0 +1,27 @@
+.feature {
+    background-color: #222224;
+    color: #fbfbfb;
+    padding: 103px calc(50% - 1140px / 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .feature__col {
+    width: 360px;
+  }
+  
+  .feature__ico {
+    margin-bottom: 20px;
+    height: 40px;
+  }
+  .feature__title {
+    margin-bottom: 16px;
+  }
+  .feature__desc {
+    padding: 0 15px;
+    font-size: 14px;
+    color: #fbfbfb;
+    font-weight: 300;
+  }

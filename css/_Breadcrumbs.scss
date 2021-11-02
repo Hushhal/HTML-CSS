@@ -1,0 +1,24 @@
+.breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f3f4;
+  padding: 0 calc(50% - 1140px / 2);
+  height: 148px;
+}
+
+.breadcrumbs__title_h1 {
+  font-size: 24px;
+  color: #f16d7f;
+}
+
+.breadcrumbs__nav {
+  color: #636363;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.breadcrumbs__nav_active {
+  color: #f16d7f;
+  font-weight: 700;
+}

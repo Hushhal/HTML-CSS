@@ -1,0 +1,56 @@
+@import "Pagination";
+@import "Breadcrumbs";
+@import "Feedback";
+@import "Footer";
+@import "Form";
+@import "Header";
+@import "Icons";
+@import "Navbar";
+@import "Subscribe";
+@import "Video";
+@import "sections/Promo";
+@import "sections/Feature";
+@import "sections/Ofter";
+@import "sections/Product";
+
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  src: url(../fonts/Lato-Regular.ttf) format("truetype"); /* все современные браузеры */
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  src: url(../fonts/Lato-Bold.ttf) format("truetype"); /* все современные браузеры */
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 300;
+  src: url(../fonts/Lato-Light.ttf) format("truetype"); /* все современные браузеры */
+}
+
+.hidden {
+  position: absolute;
+  left: -999999px;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.wrap {
+  width: 1140px;
+  margin: 0 auto;
+}
