@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  margin: 18px 0 96px!important;
+  margin: 18px 0 96px !important;
 }
 
 .pagination__container {
-  border: 1px solid #ebebeb;
+  border: 1px solid $graylight-color;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -16,16 +16,21 @@
 .pagination__arrow,
 .pagination__number_active {
   padding: 12px;
-  color: #c4c4c4;
+  color: $graylight-color;
   font-size: 16px;
   font-weight: 300;
   list-style-type: none;
 }
 
+.pagination__arrow_right:hover,
+.pagination__arrow_left:hover {
+  fill: $pink-color;
+}
+
 .pagination__number_active {
-  color: #f16d7f;
+  color: $pink-color;
 }
 
 .pagination__arrow {
-  color: #c4c4c4;
+  color: $graylight-color;
 }

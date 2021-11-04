@@ -1,11 +1,15 @@
-.footer {
-  background-color: #222224;
-  color: #ccc;
-  padding: 24px calc(50% - 1140px / 2);
+@mixin flex {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
+}
+
+.footer {
+  background-color:$primary-color;
+  color: $gray-color;
+  padding: 24px calc(50% - 1140px / 2);
+  @include flex;
 }
 
 .footer__social {
@@ -14,8 +18,8 @@
 }
 
 .footer__link {
-  color: #000;
-  background-color: #fff;
+  color: $black-color;
+  background-color: $white-color;
   padding: 5px;
   width: 31.45px;
   height: 32px;
@@ -28,6 +32,6 @@
 
 .footer__link:hover,
 .footer__link:focus {
-  color: #fff;
-  background-color: #f16d7f;
+  color: $white-color;
+  background-color: $pink-color;
 }

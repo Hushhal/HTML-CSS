@@ -1,10 +1,14 @@
-.subscribe {
-  background-color: #fff;
-  padding: 90px calc(50% - 1140px / 2);
+@mixin flex {
   display: flex;
   justify-content: space-around;
   align-content: center;
   flex-wrap: wrap;
+}
+
+.subscribe {
+  background-color: $white-color;
+  padding: 90px calc(50% - 1140px / 2);
+  @include flex;
   background: no-repeat center/80% url("../img/photo subscribe.jpg");
   background-size: cover;
 }

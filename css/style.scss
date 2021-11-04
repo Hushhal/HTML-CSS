@@ -1,3 +1,4 @@
+@import "Colors";
 @import "Pagination";
 @import "Breadcrumbs";
 @import "Feedback";
@@ -12,6 +13,9 @@
 @import "sections/Feature";
 @import "sections/Ofter";
 @import "sections/Product";
+
+$desktop: 1140px;
+$widthcol: 360px;
 
 * {
   margin: 0%;
@@ -51,6 +55,6 @@ body {
 }
 
 .wrap {
-  width: 1140px;
+  width: $desktop;
   margin: 0 auto;
 }

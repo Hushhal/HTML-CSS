@@ -12,12 +12,11 @@
   z-index: -10;
 }
 .video__overlay {
-  background: #000000b5;
   width: 100%;
-  min-height: 400px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: $white-color;
 }

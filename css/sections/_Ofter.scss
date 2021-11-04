@@ -1,10 +1,15 @@
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .ofter {
-    background-color: #fff;
+    background-color: $white-color;
     padding: 0 calc(50% - 1140px / 2);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    color: #fff;
+    @include flex;
+    color: $white-color;
     margin-top: 65px;
   }
   
@@ -12,6 +17,7 @@
     width: 360px;
     height: 260px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
@@ -42,5 +48,5 @@
   }
   .ofter__line_2 {
     font-size: 24px;
-    color: #f16d7f;
+    color: $pink-color;
   }

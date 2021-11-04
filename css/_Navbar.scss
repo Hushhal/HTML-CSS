@@ -1,8 +1,13 @@
-.navbar {
-  padding: 0 calc(50% - 1140px / 2);
+$NavbarIcon: 33px;
+@mixin flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.navbar {
+  padding: 0 calc(50% - 1140px / 2);
+  @include flex;
   height: 75px;
 }
 
@@ -18,9 +23,15 @@
 }
 
 .navbar__user-ico {
-  margin-left: 33px;
+  margin-left: $NavbarIcon;
 }
 
 .navbar__basket-ico {
-  margin-left: 33px;
+  margin-left: $NavbarIcon;
+}
+.navbar__link {
+  fill:$white-color;
+  &:hover {
+    fill: $pink-color;
+  }
 }
