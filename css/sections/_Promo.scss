@@ -1,47 +1,40 @@
-@mixin flex {
+.promo {
+  background-color: $pinklignt-color;
+  padding: 0 calc(50% - 1140px / 2);
+  @include flex;
+}
+
+.promo__col_1,
+.promo__col_2 {
+  width: 50%;
+}
+
+.promo__col_1 {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: start;
+}
+
+.promo__title {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
-.promo {
-    background-color: $pinklignt-color;
-    padding: 0 calc(50% - 1140px / 2);
-    @include flex;
-  }
-  
-  .promo__col_1,
-  .promo__col_2 {
-    width: 50%;
-  }
-  
-  .promo__col_1 {
-    display: flex;
-    justify-content: start;
-  }
-  
-  .promo__title {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .promo__title_h1 {
-    font-size: 48px;
-    line-height: 0.8;
-    margin-left: 16px;
-    padding: 8px 0px 8px 16px;
-    border-left: $pink-color 12px solid;
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    color: $primary-color;
-  }
-  
-  .promo__h2 {
-    font-size: 32px;
-  }
-  
-  .promo__color {
-    color: $pink-color;
-  }
+.promo__title_h1 {
+  font-size: 48px;
+  line-height: 0.8;
+  margin-left: 16px;
+  padding: 8px 0px 8px 16px;
+  border-left: $pink-color 12px solid;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: $primary-color;
+}
+
+.promo__h2 {
+  font-size: 32px;
+}
+
+.promo__color {
+  color: $pink-color;
+}

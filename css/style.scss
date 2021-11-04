@@ -1,4 +1,6 @@
+@import "var";
 @import "Colors";
+@import "mixins";
 @import "Pagination";
 @import "Breadcrumbs";
 @import "Feedback";
@@ -13,9 +15,6 @@
 @import "sections/Feature";
 @import "sections/Ofter";
 @import "sections/Product";
-
-$desktop: 1140px;
-$widthcol: 360px;
 
 * {
   margin: 0%;
