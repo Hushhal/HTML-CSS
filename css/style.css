@@ -50,6 +50,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -104,6 +108,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -198,6 +206,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -242,6 +254,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -338,12 +354,203 @@
   color: #fff;
 }
 
+.registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 64px 0 96px;
+}
+
+.registration__colleft {
+  max-width: 360px;
+}
+
+.registration__colright {
+  width: 652px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form__name {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form__field {
+  width: 360px;
+}
+
+.form__field_description {
+  margin-bottom: 40px;
+  width: 360px;
+  color: #b1b1b1;
+  font-size: 13px;
+  line-height: 15.6px;
+}
+
+.form__radio {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.form__radio_gender {
+  font-size: 11px;
+  font-weight: 300;
+  color: black;
+  margin-left: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-bottom: 33px;
+}
+
+input {
+  padding: 14px 18px;
+  border: #a4a4a4 1px solid;
+  margin-bottom: 20px;
+}
+
+input:placeholder {
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+  font-weight: 300;
+}
+
+.form__field_last {
+  margin-bottom: 15px;
+}
+
+legend {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  color: #222222;
+}
+
+.form__button {
+  font-size: 14px;
+  line-height: 16.8px;
+  background-color: #f16d7f;
+  color: #fff;
+  padding: 16px 29px 17px;
+  cursor: pointer;
+  /*&::before {
+    content: "";
+    float: left;
+    width: 17px;
+    height: 9.92px;
+    margin: 10px 22px 0 0;
+    background: url(../img/arrow-right-form.svg) 0 0;
+  }*/
+}
+
+.form__button:hover, .form__button:focus {
+  background-color: #c63e51;
+}
+
+.form__buttonicon {
+  margin-left: 20px;
+}
+
+.registration__title {
+  margin-bottom: 22px;
+}
+
+.registration__text {
+  font-size: 24px;
+  line-height: 28.8px;
+  color: black;
+  font-weight: 300;
+  margin-bottom: 21px;
+}
+
+.registration__li {
+  margin-bottom: 16px;
+  list-style-type: none;
+}
+
+.registration__li::before {
+  content: "";
+  float: left;
+  width: 20px;
+  height: 16px;
+  margin: 10px 22px 0 0;
+  background: url(../img/marker.svg) 0 0;
+}
+
 .promo {
   background-color: #f1e4e6;
   padding: 0 calc(50% - 1140px / 2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -440,6 +647,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -507,6 +718,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -701,5 +916,12 @@ body {
 .wrap {
   width: 1140px;
   margin: 0 auto;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 300;
+  color: black;
 }
 /*# sourceMappingURL=Style.css.map */

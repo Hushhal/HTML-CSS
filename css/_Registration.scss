@@ -1,0 +1,124 @@
+.registration {
+  @include flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 64px 0 96px;
+}
+
+.registration__colleft {
+  max-width: $widthcol;
+}
+
+.registration__colright {
+  width: 652px;
+}
+
+.form {
+  @include flex;
+}
+
+.form__name {
+  border: none;
+  @include flexvertical;
+}
+
+.form__field {
+  width: $widthcol;
+}
+
+.form__field_description {
+  margin-bottom: 40px;
+  width: $widthcol;
+  color: #b1b1b1;
+  font-size: 13px;
+  line-height: 13px * 1.2;
+}
+
+.form__radio {
+  border: none;
+  @include flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.form__radio_gender {
+  font-size: 11px;
+  font-weight: $weightlight;
+  color: black;
+  margin-left: 10px;
+  margin-right: 20px;
+  cursor: $pointer;
+  margin-bottom: 33px;
+}
+
+input {
+  padding: 14px 18px;
+  border: #a4a4a4 1px solid;
+  margin-bottom: 20px;
+  &:placeholder {
+    font-size: 13px;
+    line-height: 16px;
+    color: #b1b1b1;
+    font-weight: $weightlight;
+  }
+}
+
+.form__field_last {
+  margin-bottom: 15px;
+}
+
+legend {
+  font-weight: $weightlight;
+  font-size: 16px;
+  line-height: 16px * 1.25;
+  margin-bottom: 20px;
+  color: $primary-color;
+}
+
+.form__button {
+  font-size: 14px;
+  line-height: 14px * 1.2;
+  background-color: $pink-color;
+  color: $white-color;
+  padding: 16px 29px 17px;
+  cursor: $pointer;
+  /*&::before {
+    content: "";
+    float: left;
+    width: 17px;
+    height: 9.92px;
+    margin: 10px 22px 0 0;
+    background: url(../img/arrow-right-form.svg) 0 0;
+  }*/
+  &:hover,
+  &:focus {
+    background-color: $pinkdark-color;
+  }
+}
+
+.form__buttonicon {
+  margin-left: 20px;
+}
+
+.registration__title {
+  margin-bottom: 22px;
+}
+
+.registration__text {
+  @include text;
+  margin-bottom: 21px;
+}
+
+.registration__li {
+  margin-bottom: 16px;
+  list-style-type: none;
+  &::before {
+    content: "";
+    float: left;
+    width: 20px;
+    height: 16px;
+    margin: 10px 22px 0 0;
+    background: url(../img/marker.svg) 0 0;
+  }
+}
