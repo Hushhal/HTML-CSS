@@ -104,14 +104,26 @@
                 placeholder="Last Name"
               />
             </fieldset>
-            <fieldset class="form__radio">
-              <legend class="hidden">Gender</legend>
-              <input type="radio" name="gender" id="male" value="male" />
-              <label class="form__radio_gender" for="male">Male</label>
 
-              <input type="radio" name="gender" id="female" value="female" />
+            <fieldset class="form__radio">
+              <input
+                class="form__custom"
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+              />
+              <label class="form__radio_gender" for="male">Male</label>
+              <input
+                class="form__custom"
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+              />
               <label class="form__radio_gender" for="female">Female</label>
             </fieldset>
+
             <fieldset class="form__name">
               <legend>Login details</legend>
               <input class="form__field" type="email" placeholder="Email" />
