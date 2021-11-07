@@ -201,6 +201,139 @@
   color: #fff;
 }
 
+.productcart {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.productcart__img {
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.productcart__container {
+  margin: -65px 0 128px;
+}
+
+.productcart__innercontainer {
+  max-width: 642px;
+  margin: 0 auto;
+}
+
+.productcart__content {
+  background-color: white;
+  margin-top: -65px;
+  z-index: 1;
+  padding: 65px 0;
+  text-align: center;
+  position: relative;
+  border: #eaeaea 1px solid;
+}
+
+.productcart__preheader {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16.8px;
+  color: #f16d7f;
+}
+
+.productcart__pinkline {
+  content: "";
+  width: 63px;
+  height: 3px;
+  background-color: #f16d7f;
+  margin: 12px auto;
+}
+
+.productcart__grayline {
+  content: "";
+  height: 1px;
+  background-color: #eaeaea;
+  margin: 64px auto 0;
+}
+
+.productcart__title {
+  font-size: 18px;
+  line-height: 21.6px;
+  margin-bottom: 48px;
+}
+
+.productcart__text {
+  font-size: 14px;
+  font-weight: 300;
+  color: #5E5E5E;
+  max-width: 565px;
+  margin: 0 auto 32px;
+}
+
+.productcart__price {
+  color: #f16d7f;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.productcart__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button__outline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f16d7f;
+  border: #f16d7f 1px solid;
+  padding: 10px 0;
+  text-decoration: none;
+  fill: #f16d7f;
+  font-size: 16px;
+  width: 212px;
+  cursor: pointer;
+}
+
+.button__outline:hover, .button__outline:focus {
+  background-color: #f16d7f;
+  color: white;
+  fill: white;
+}
+
+.button__icon {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  width: 40%;
+  margin-top: 3px;
+}
+
+.button__text {
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+  text-align: left;
+  width: 60%;
+}
+
+.productcart__fliter {
+  padding: 64px 0 48px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productcart_catalog {
+  margin-bottom: 128px;
+}
+
 .navbar {
   padding: 0 calc(50% - 1140px / 2);
   display: -webkit-box;
