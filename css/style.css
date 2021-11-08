@@ -1,4 +1,98 @@
 @charset "UTF-8";
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #6f6e6e;
+  padding: 51px 0 64px 0px;
+}
+
+summary::marker {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.filter__summary {
+  position: relative;
+  z-index: 2;
+}
+
+.filter__summary:hover {
+  color: #f16d7f;
+  fill: #f16d7f;
+}
+
+.filter__title:hover {
+  color: #f16d7f;
+}
+
+.filter__content {
+  padding: 53px 16px 13px;
+  background-color: white;
+  border: #EBEBEB 1px solid;
+  position: absolute;
+  z-index: 1;
+  width: 360px;
+  margin-top: -40px;
+  -webkit-box-shadow: 10px 10px 15px 0px #e1e1e16b;
+          box-shadow: 10px 10px 15px 0px #e1e1e16b;
+}
+
+.filter__title {
+  border-left: #f16d7f 5px solid;
+  border-bottom: #e1e1e1 1px solid;
+  padding: 11px;
+}
+
+.filter__item {
+  list-style-type: none;
+  margin: 11px 0 0;
+}
+
+.filter__link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #6f6e6e;
+  line-height: 21.6px;
+}
+
+.filter__link:hover {
+  color: #f16d7f;
+}
+
+.filter__sort {
+  width: 360px;
+}
+
+.filter__sort_img {
+  margin-left: 10px;
+}
+
+.filter__select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 30px;
+}
+
+.filter__select_name {
+  margin-right: 30px;
+}
+
+.filter__select_img {
+  margin-left: 10px;
+}
+
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1010,44 +1104,6 @@ legend {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.product__filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #6f6e6e;
-}
-
-.product__filter_sort {
-  width: 360px;
-  padding: 51px 0 64px 10px;
-}
-
-.product__filter_sort_img {
-  margin-left: 11px;
-}
-
-.product__select {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin-left: 30px;
-}
-
-.product__select_name {
-  margin-right: 28px;
-}
-
-.product__select_img {
-  margin-left: 10px;
 }
 
 .product__col {

@@ -3,37 +3,6 @@
   padding: 0 calc(50% - 1140px / 2);
   @include flex;
 }
-
-.product__filter {
-  display: flex;
-  color: $graydark-color;
-}
-
-.product__filter_sort {
-  width: 360px;
-  padding: 51px 0 64px 10px;
-}
-
-.product__filter_sort_img {
-  margin-left: 11px;
-}
-
-.product__select {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-content: center;
-  margin-left: 30px;
-}
-
-.product__select_name {
-  margin-right: 28px;
-}
-
-.product__select_img {
-  margin-left: 10px;
-}
-
 .product__col {
   width: 360px;
   background-color: $productbackground;
