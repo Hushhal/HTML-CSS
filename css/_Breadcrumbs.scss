@@ -1,6 +1,6 @@
 .breadcrumbs {
   @include flex;
-  background-color: $graylight-color;
+  background-color: $breadcrumb-bg;
   padding: 0 calc(50% - 1140px / 2);
   height: 148px;
 }
