@@ -5,7 +5,7 @@
   height: 148px;
 }
 
-.breadcrumbs__title_h1 {
+.title__h1 {
   font-size: 24px;
   color: $pink-color;
 }
@@ -16,7 +16,23 @@
   font-weight: 300;
 }
 
-.breadcrumbs__nav_active {
+.breadcrumbs__ol {
+  @include flex;
+}
+
+.breadcrumbs__li {
+  list-style-type: none;
+  &::after {
+    content: "/";
+    margin: 0 5px;
+  }
+  &:last-child::after {
+    content: none;
+    margin: 0;
+  }
+}
+
+.breadcrumbs__active {
   color: $pink-color;
   font-weight: 700;
 }
