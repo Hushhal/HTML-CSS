@@ -253,6 +253,11 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #F7F7F7;
+  position: relative;
+}
+
+.slider__img {
+  margin: 11px auto 42px;
 }
 
 .slider__btn {
@@ -271,10 +276,19 @@
   background-color: #ccc;
   fill: black;
   cursor: pointer;
+  position: absolute;
 }
 
 .slider__btn:hover {
   fill: #f16d7f;
+}
+
+.slider__btn_left {
+  left: 5px;
+}
+
+.slider__btn_right {
+  right: 5px;
 }
 
 .productcart {

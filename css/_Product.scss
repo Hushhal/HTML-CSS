@@ -3,6 +3,11 @@
   flex-flow: $flow;
   @include flex;
   background-color: $sliderbackground;
+  position: relative;
+}
+
+.slider__img {
+  margin: 11px auto 42px;
 }
 
 .slider__btn {
@@ -15,9 +20,18 @@
   background-color: $gray-color;
   fill: black;
   cursor: pointer;
+  position: absolute;
   &:hover {
     fill: $pink-color;
   }
+}
+
+.slider__btn_left {
+  left: 5px;
+}
+
+.slider__btn_right {
+  right: 5px;
 }
 
 .productcart {
