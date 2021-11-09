@@ -1,0 +1,15 @@
+.button__outline,
+.slider__btn,
+.product__overlay,
+.product__col,
+.form__submit,
+.footer__link,
+.product__col,
+.product__col img {
+  transition: 400ms;
+}
+
+.product__col:hover img {
+  transform: scale(1.4);
+  transition: 400ms;
+}

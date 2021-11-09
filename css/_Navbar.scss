@@ -24,6 +24,7 @@
 }
 .navbar__link {
   fill: $white-color;
+  transition: 400ms;
   &:hover {
     fill: $pink-color;
   }
