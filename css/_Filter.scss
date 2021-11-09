@@ -1,92 +1,184 @@
 $padding-icon: 10px;
 
 .filter {
-    display: flex;
-    color: $graydark-color;
-    padding: 51px 0 64px 0px;
-  }
+  display: flex;
+  color: $graydark-color;
+  padding: 51px 0 64px 0px;
+}
 
-  summary{
-    &::marker {
-      list-style: none;
-    }
-    &::-webkit-details-marker {
-      display: none;
-    }
+.filter__sort {
+  &::marker {
+    list-style: none;
   }
-
-  .filter__summary {
-    position: relative;
-    z-index: 2;
-    &:hover {
-      color: $pink-color;
-      fill:$pink-color;
-    }
+  &::-webkit-details-marker {
+    display: none;
   }
+}
 
-  .filter__title {
-    &:hover {
-      color: $pink-color;
-    }
+.filter__summary {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin-left: 16px;
+  cursor: pointer;
+  &:hover {
+    color: $pink-color;
+    fill: $pink-color;
   }
+}
 
+.filter__content_top {
+  padding: 53px 16px 13px;
+  background-color: white;
+  border: white 1px solid;
+  position: absolute;
+  z-index: 1;
+  width: $widthcol;
+  margin-top: -40px;
+  box-shadow: 0 0 25px 0px #d2d2d26b;
+}
 
-
-  .filter__content {
-    padding: 53px 16px 13px;
-    background-color: white;
-    border: #EBEBEB 1px solid;
-    position: absolute;
-    z-index: 1;
-    width: $widthcol;
-    margin-top: -40px;
-    box-shadow: 10px 10px 15px 0px #e1e1e16b;
+.filter__title {
+  border-left: $pink-color 5px solid;
+  border-bottom: $graylight-color 1px solid;
+  padding: 11px;
+  margin-bottom: 18px;
+  display: block;
+  cursor: pointer;
+  &:hover {
+    color: $pink-color;
   }
+}
 
-  
-  .filter__title {
-    border-left: $pink-color 5px solid;
-    border-bottom:$graylight-color 1px solid;
-    padding: 11px;
+.filter__item {
+  list-style-type: none;
+  margin: 11px 0 0 16px;
+  &:last-child {
+    margin-bottom: 24px;
   }
+}
 
-  .filter__item
-   {
-    list-style-type: none;
-    margin: 11px 0 0;
+.filter__link {
+  text-decoration: none;
+  font-size: $normal;
+  color: $graydark-color;
+  line-height: $middle * 1.2;
+  &:hover {
+    color: $pink-color;
   }
+}
 
-  .filter__link {
-    text-decoration: none;
-    font-size: $middle;
-    color: $graydark-color;
-    line-height: $middle * 1.2;
-    &:hover {
-      color: $pink-color;
-    }
-  }
+.filter__sort {
+  width: 360px;
+}
 
+.filter__sort_img {
+  margin-left: $padding-icon;
+}
 
-  .filter__sort {
-    width: 360px;
-  }
+.filter__select {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-left: 30px;
+}
 
-  .filter__sort_img {
-    margin-left: $padding-icon;
-  }
+.filter__select_name {
+  margin-right: 30px;
+}
 
-  .filter__select {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-content: center;
-    margin-left: 30px;
+.filter__select_img {
+  margin-left: 10px;
+}
+
+.filter__summary_select {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin: 0 30px 0 0;
+  cursor: pointer;
+  &:hover {
+    color: $pink-color;
+    fill: $pink-color;
   }
-  
-  .filter__select_name {
-    margin-right: 30px;
-  }
-  
-  .filter__select_img {
-    margin-left: 10px;
-  }
+}
+
+.filter__content_bottom {
+  padding: 10px 10px 0 10px;
+  background-color: white;
+  border: white 1px solid;
+  position: absolute;
+  z-index: 1;
+  width: 103px;
+  margin: 5px 0 0 -10px;
+  box-shadow: 0 0 25px 0px #d2d2d26b;
+}
+
+.filter__fieldset {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  border: none;
+}
+
+.filter__checkbox {
+  margin: 0 10px 0 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.filter__checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  margin-bottom: 10px;
+}
+
+.filter__checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #ebebeb;
+  border-radius: 0;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.filter__checkbox:checked + label::before {
+  border-color: $pink-color;
+  background-color: $pink-color;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили при наведении курсора на checkbox */
+.filter__checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: $pink-color;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.filter__checkbox:not(:disabled):active + label::before {
+  background-color: $pink-color;
+  border-color: $pink-color;
+}
+/* стили для чекбокса, находящегося в фокусе 
+.filter__checkbox:focus+label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}*/
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.filter__checkbox:focus:not(:checked) + label::before {
+  border-color: $pinklignt-color;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.filter__checkbox:disabled + label::before {
+  background-color: #e9ecef;
+}
+
+.filter__label {
+}
