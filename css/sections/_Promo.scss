@@ -38,3 +38,36 @@
 .promo__color {
   color: $pink-color;
 }
+
+@media screen and (max-width:790px) {
+  .promo {
+    padding: 0 calc(50% - 768px / 2);
+  }
+  .promo__title_h1 {
+    font-size: 44px;
+  }
+  .promo__h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width:395px) {
+  .promo__col_1  {
+    display:none;
+
+  }
+  .promo__col_2 {
+    height: 363px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .promo__title_h1 {
+    font-size: 38px;
+  }
+  .promo__h2 {
+    font-size: 20px;
+  }
+}
+

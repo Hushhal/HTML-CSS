@@ -1,3 +1,4 @@
+@import "Media";
 @import "var";
 @import "Colors";
 @import "Filter";
@@ -20,7 +21,6 @@
 @import "sections/Cart";
 @import "sections/Feature";
 @import "sections/Ofter";
-@import "sections/Product";
 
 * {
   margin: 0%;
@@ -68,4 +68,16 @@ h3 {
   font-size: 24px;
   line-height: 24px * 1.2;
   font-weight: $weightlight;
+}
+
+@media screen and (max-width: 790px) {
+  .wrap {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .wrap {
+    width: 375px;
+  }
 }

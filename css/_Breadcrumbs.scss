@@ -36,3 +36,16 @@
   color: $pink-color;
   font-weight: 700;
 }
+
+@media screen and (max-width: 790px) {
+  .breadcrumbs {
+    padding: 0 calc(50% - 738px / 2);
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .breadcrumbs {
+    padding: 0 calc(50% - 345px / 2);
+    justify-content: center;
+  }
+}

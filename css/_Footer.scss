@@ -28,3 +28,23 @@
   color: $white-color;
   background-color: $pink-color;
 }
+
+
+@media screen and (max-width:768px) {
+  .footer {
+    padding: 24px calc(50% - 738px / 2) 32px;
+  }
+}
+
+@media screen and (max-width:395px) {
+  .footer {
+    padding: 42px calc(50% - 345px / 2) 9px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .footer__social {
+    margin-bottom:40px
+  }
+}

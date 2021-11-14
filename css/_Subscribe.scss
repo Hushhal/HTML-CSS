@@ -33,3 +33,12 @@
   flex-wrap: wrap;
   font-size: 14px;
 }
+
+@media screen and (max-width:768px) {
+  .subscribe {
+    padding: 64px calc(50% - 738px / 2) 140px;
+    flex-direction: column;
+    justify-content: space-between;
+    height:calc(693px - 79px);
+  }
+}

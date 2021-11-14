@@ -29,3 +29,17 @@
     fill: $pink-color;
   }
 }
+
+@media screen and (max-width:768px) {
+  .navbar {
+      padding: 0 15px;
+  }
+}
+
+
+@media screen and (max-width:395px) {
+  .navbar__basket-ico {
+    display:none
+  }
+}
+
