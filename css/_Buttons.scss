@@ -38,3 +38,16 @@
 .btn-fullwidth {
     width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .btn {
+      font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+    .btn {
+        font-size: 12px;
+        padding: 9px;
+    }
+}

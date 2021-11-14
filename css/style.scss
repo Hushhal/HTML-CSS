@@ -70,13 +70,13 @@ h3 {
   font-weight: $weightlight;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 768px) {
   .wrap {
     width: 768px;
   }
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 380px) {
   .wrap {
     width: 375px;
   }
